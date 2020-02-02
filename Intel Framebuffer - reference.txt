@@ -1,0 +1,240 @@
+0x191E0000 (mobile, 3 connectors)
+0x19160000 (mobile, 3 connectors)
+0x19260000 (mobile, 3 connectors)
+0x19270000 (mobile, 3 connectors)
+0x191B0000 (mobile, 3 connectors)
+0x193B0000 (mobile, 3 connectors)
+0x19120000 (mobile, 3 connectors)
+0x19020001 (desktop, 0 connectors, no fbmem)
+0x19170001 (desktop, 0 connectors, no fbmem)
+0x19120001 (desktop, 0 connectors, no fbmem)
+0x19320001 (desktop, 0 connectors, no fbmem)
+0x19160002 (mobile, 3 connectors, no fbmem)
+0x19260002 (mobile, 3 connectors, no fbmem)
+0x191E0003 (mobile, 3 connectors, no fbmem)
+0x19260004 (mobile, 3 connectors, no fbmem)
+0x19270004 (mobile, 3 connectors, no fbmem)
+0x193B0005 (mobile, 4 connectors, no fbmem)
+0x191B0006 (mobile, 1 connectors, no fbmem)
+0x19260007 (mobile, 3 connectors, no fbmem)
+
+ID: 191E0000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000050F
+TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)
+GPU Name: Intel HD Graphics 515
+Model Name(s):
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - DP
+00000800 02000000 98000000
+01050900 00040000 87010000
+02040A00 00040000 87010000
+
+ID: 19160000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000090F
+TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)
+GPU Name: Intel HD Graphics 520
+Model Name(s):
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - DP
+00000800 02000000 98000000
+01050900 00040000 87010000
+02040A00 00040000 87010000
+
+ID: 19260000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000090F
+TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)
+GPU Name: Intel Iris Graphics 540
+Model Name(s):
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - DP
+00000800 02000000 98000000
+01050900 00040000 87010000
+02040A00 00040000 87010000
+
+ID: 19270000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000090F
+TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)
+GPU Name: Intel Iris Graphics 550
+Model Name(s):
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - DP
+00000800 02000000 98000000
+01050900 00040000 87010000
+02040A00 00040000 87010000
+
+ID: 191B0000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000110F
+TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)
+GPU Name: Intel HD Graphics 530
+Model Name(s): MacBookPro13,3
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - DP
+00000800 02000000 98000000
+01050900 00040000 87010000
+02040A00 00040000 87010000
+
+ID: 193B0000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00001187
+TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)
+GPU Name: Intel Iris Pro Graphics 580
+Model Name(s):
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - HDMI
+[3] busId: 0x06, pipe: 10, type: 0x00000400, flags: 0x00000187 - DP
+00000800 02000000 98000000
+02040A00 00080000 87010000
+03060A00 00040000 87010000
+
+ID: 19120000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000110F
+TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)
+GPU Name: Intel HD Graphics 530
+Model Name(s): iMac17,1
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[-1] busId: 0x00, pipe: 0, type: 0x00000001, flags: 0x00000020 - Dummy
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - DP
+FF000000 01000000 20000000
+01050900 00040000 87010000
+02040A00 00040000 87010000
+
+ID: 19020001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800
+TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB
+GPU Name: Intel HD Graphics 510
+Model Name(s):
+Camelia: Disabled, Freq: 0 Hz, FreqMax: 0 Hz
+Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0
+
+ID: 19170001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800
+TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB
+GPU Name: Intel Skylake GT2f
+Model Name(s):
+Camelia: Disabled, Freq: 0 Hz, FreqMax: 0 Hz
+Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0
+
+ID: 19120001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800
+TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB
+GPU Name: Intel HD Graphics 530
+Model Name(s):
+Camelia: Disabled, Freq: 0 Hz, FreqMax: 0 Hz
+Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0
+
+ID: 19320001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800
+TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB
+GPU Name: Intel Iris Pro Graphics 580
+Model Name(s):
+Camelia: Disabled, Freq: 0 Hz, FreqMax: 0 Hz
+Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0
+
+ID: 19160002, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00830B02
+TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)
+GPU Name: Intel HD Graphics 520
+Model Name(s):
+Camelia: V3, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - DP
+00000800 02000000 98040000
+01050900 00040000 C7030000
+02040A00 00040000 C7030000
+
+ID: 19260002, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A
+TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)
+GPU Name: Intel Iris Graphics 540
+Model Name(s): MacBookPro13,1
+Camelia: V3, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - DP
+00000800 02000000 98040000
+01050900 00040000 C7030000
+02040A00 00040000 C7030000
+
+ID: 191E0003, STOLEN: 40 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x002B0702
+TOTAL STOLEN: 41 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 121 MB, MAX OVERALL: 122 MB (128462848 bytes)
+GPU Name: Intel HD Graphics 515
+Model Name(s): MacBook9,1
+Camelia: V2, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000181 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000181 - DP
+00000800 02000000 98000000
+01050900 00040000 81010000
+02040A00 00040000 81010000
+
+ID: 19260004, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00030B0A
+TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
+GPU Name: Intel Iris Graphics 540
+Model Name(s):
+Camelia: V3, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - DP
+00000800 02000000 98040000
+01050900 00040000 C7010000
+02040A00 00040000 C7010000
+
+ID: 19270004, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A
+TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)
+GPU Name: Intel Iris Graphics 550
+Model Name(s): MacBookPro13,2
+Camelia: V3, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - DP
+00000800 02000000 98040000
+01050900 00040000 C7030000
+02040A00 00040000 C7030000
+
+ID: 193B0005, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0023130A
+TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 137 MB, MAX OVERALL: 138 MB (145244160 bytes)
+GPU Name: Intel Iris Pro Graphics 580
+Model Name(s): MacBookPro13,1
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 4
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - DP
+[3] busId: 0x06, pipe: 10, type: 0x00000400, flags: 0x000001C7 - DP
+00000800 02000000 98000000
+01050900 00040000 C7010000
+02040A00 00040000 C7010000
+03060A00 00040000 C7010000
+
+ID: 191B0006, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00131302
+TOTAL STOLEN: 39 MB, TOTAL CURSOR: 512 KB, MAX STOLEN: 39 MB, MAX OVERALL: 39 MB (41422848 bytes)
+GPU Name: Intel HD Graphics 530
+Model Name(s):
+Camelia: V3, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 1, PortCount: 1, FBMemoryCount: 1
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - LVDS
+00000800 02000000 98040000
+
+ID: 19260007, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00031302
+TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
+GPU Name: Intel Iris Graphics 540
+Model Name(s):
+Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+[0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+[1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - DP
+[2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - DP
+00000800 02000000 98000000
+01050900 00040000 C7010000
+02040A00 00040000 C7010000
