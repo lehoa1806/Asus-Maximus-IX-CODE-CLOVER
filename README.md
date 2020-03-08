@@ -8,7 +8,7 @@ TL-WDN4800
 ```
 
 ## BIOS config
-### High Sierra with Nvidia GTX 960
+### High Sierra with Nvidia GTX 960 / Catalina with MSI RX 570 Armor
 ```
 Exit
 - Load Optimized Defaults
@@ -18,7 +18,7 @@ Boot Menu
 Advanced
 - System Agent (SA) Configuration -> VT-d -> Disable
 - System Agent (SA) Configuration -> Graphics Configuration -> Primary Display -> Auto
-- System Agent (SA) Configuration -> Graphics Configuration -> iGPU Multi-Monitor -> Disabled
+- System Agent (SA) Configuration -> Graphics Configuration -> iGPU Multi-Monitor -> Enable
 - PCH Configuration -> IOAPIC 24-119 -> Disabled
 - Onboard Devices Configuration -> Wi-Fi Controller -> Disabled (Bluetooth Controller is Enabled -  naitive support but Wifi is not - replaced by TL-WDN4800)
 Extreme Tweaker
@@ -81,6 +81,7 @@ IntelMausiEthernet.kext
 Lilu.kext
 WhateverGreen.kext
 IO80211Family.kext # Catalina
+USBPorts.kext
 ```
 IO80211Family.kext <- Original kext from High Sierra 13.6, kext for TL-WDN4800 N900, which is removed from Catalina
 
@@ -178,11 +179,10 @@ cp -R ./../kexts/USBPorts.kext kexts/RELEASE/
 # Post Install
 * Install Clover Bootloader to USB
 * Upgrade latest security patch
-* Install Nvidia Web Driver 17G11023 - 387.10.10.10.40.134
+* Install Nvidia Web Driver 17G11023 - 387.10.10.10.40.134 <- High Sierra with Nvidia GTX 960
 * Generate SMBIOS, CustomUUID
-* Remove nv_disable=1 and other debug agurments from boot menu
-* Enable NvidiaWeb flag
-* [Optional] Change ig-platform-id to 12190001 (headless)
+* Remove nv_disable=1 and other debug agurments from boot menu <- High Sierra with Nvidia GTX 960
+* Enable NvidiaWeb flag <- High Sierra with Nvidia GTX 960
 * Copy VirtualSmc.efi, HFSPlus.efi (High Sierra) from /drivers to /Clover/drivers/UEFI/
 
 * Run Apps from internet (Catalina):
