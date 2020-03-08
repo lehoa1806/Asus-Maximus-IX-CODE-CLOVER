@@ -135,6 +135,8 @@ cp -R build/Debug/IntelMausiEthernet.kext ./../kexts/DEBUG/
 # IO80211Family and USBInjectAll
 cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
 cp -R ./../kexts/IO80211Family.kext kexts/DEBUG/
+cp -R ./../kexts/USBPorts.kext kexts/DEBUG/
+
 
 # Build RELEASE ========================================================
 # Lilu
@@ -165,6 +167,7 @@ cp -R build/Release/IntelMausiEthernet.kext ./../kexts/RELEASE/
 # IO80211Family and USBInjectAll
 cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
 cp -R ./../kexts/IO80211Family.kext kexts/RELEASE/
+cp -R ./../kexts/USBPorts.kext kexts/RELEASE/
 ```
 
 # Install
