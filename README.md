@@ -1,4 +1,6 @@
 # Notes
+Calatina 10.15.4 (19E266)
+
 ## Hardware
 ```
 Asus-Maximus-IX-CODE  # This config works well with Giga Z170 D3H
@@ -76,12 +78,12 @@ sudo kextcache -i /
 ## /EFI/CLOVER/kexts/Other
 ```
 AppleALC.kext
-VirtualSMC.kext
+IO80211Family.kext # Catalina
 IntelMausiEthernet.kext
 Lilu.kext
-WhateverGreen.kext
-IO80211Family.kext # Catalina
 USBPorts.kext
+VirtualSMC.kext
+WhateverGreen.kext
 ```
 IO80211Family.kext <- Original kext from High Sierra 13.6, kext for TL-WDN4800 N900, which is removed from Catalina
 
@@ -171,13 +173,16 @@ cp -R ./../kexts/IO80211Family.kext kexts/RELEASE/
 cp -R ./../kexts/USBPorts.kext kexts/RELEASE/
 ```
 
+#  Clover EFI bootloader
+* Latest version - 10.15.4 (19E266) requires Clover bootloader 5017 or above
+
 # Install
 * Create USB using createinstallmedia method
 * Install Clover Bootloader to USB
 * Copy VirtualSmc.efi, HFSPlus.efi (High Sierra) from /drivers to /Clover/drivers/UEFI/
 
 # Post Install
-* Install Clover Bootloader to USB
+* Install Clover Bootloader
 * Upgrade latest security patch
 * Install Nvidia Web Driver 17G11023 - 387.10.10.10.40.134 <- High Sierra with Nvidia GTX 960
 * Generate SMBIOS, CustomUUID

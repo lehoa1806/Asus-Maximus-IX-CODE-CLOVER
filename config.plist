@@ -140,7 +140,7 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<data>CwAAAA==</data>
+				<data>BwAAAA==</data>
 				<key>model</key>
 				<string>200 Series PCH HD Audio</string>
 			</dict>
@@ -188,6 +188,7 @@
 		<array>
 			<string>Preboot</string>
 			<string>Recovery</string>
+			<string>\EFI\BOOT\BOOTx64.EFI</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -297,7 +298,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x03</string>
+		<string>0x67</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
