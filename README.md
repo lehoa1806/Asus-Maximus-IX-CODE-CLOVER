@@ -184,12 +184,11 @@ sudo pmset -a hibernatemode 0
 sudo rm /var/vm/sleepimage
 sudo mkdir /var/vm/sleepimage
 ```
-* Disable the other hibernation related options:
+* Disable the other hibernation/sleep related options:
 ```
-sudo pmset -a standby 0
-sudo pmset -a autopoweroff 0
-```
-* Wake-up from sleep fix:
-```
-sudo pmset -a autopoweroff 0
+sudo pmset autopoweroff 0
+sudo pmset powernap 0
+sudo pmset standby 0
+sudo pmset proximitywake 0
+sudo pmset tcpkeepalive 0
 ```
