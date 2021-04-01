@@ -1,16 +1,16 @@
 # Notes
-Calatina 10.15.4 (19E266)
+Big Sur 11.2.3
 
 ## Hardware
 ```
-Asus-Maximus-IX-CODE  # This config works well with Giga Z170 D3H
+Asus-Maximus-IX-CODE
 i7 6700K (Intel Framebuffer - reference)
 GTX 960
 TL-WDN4800
 ```
 
 ## BIOS config
-### High Sierra with Nvidia GTX 960 / Catalina with MSI RX 570 Armor
+### High Sierra with Nvidia GTX 960 / Big Sur with MSI RX 570 Armor
 ```
 Exit
 - Load Optimized Defaults
@@ -78,14 +78,12 @@ sudo kextcache -i /
 ## /EFI/CLOVER/kexts/Other
 ```
 AppleALC.kext
-IO80211Family.kext # Catalina
 IntelMausiEthernet.kext
 Lilu.kext
 USBPorts.kext
 VirtualSMC.kext
 WhateverGreen.kext
 ```
-IO80211Family.kext <- Original kext from High Sierra 13.6, kext for TL-WDN4800 N900, which is removed from Catalina
 
 ## Compile kexts
 
@@ -95,82 +93,58 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 ```
 
 ```
-# Unzip kexts in /kexts
-mkdir -p /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build/kexts
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build/kexts
-mkdir DEBUG
-mkdir RELEASE
-
-# Build DEBUG ========================================================
 # Lilu
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
-git clone https://github.com/acidanthera/Lilu.git && cd Lilu
+cd ~/workspace/HACKINTOSH/Asus-Maximus-IX-CODE/build
+git clone https://github.com/acidanthera/Lilu.git
+git clone https://github.com/acidanthera/MacKernelSDK
+cd Lilu
+cp -R ./../MacKernelSDK .
 xcodebuild -configuration Debug
-cp -R build/Debug/Lilu.kext ./../kexts/DEBUG/
-
-# AppleALC
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
-git clone https://github.com/acidanthera/AppleALC.git && cd AppleALC
-cp -R ../Lilu/build/Debug/Lilu.kext .
-xcodebuild -configuration Debug
-cp -R build/Debug/AppleALC.kext ./../kexts/DEBUG/
-
-# VirtualSMC
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
-git clone https://github.com/acidanthera/VirtualSMC.git && cd VirtualSMC
-cp -R ../Lilu/build/Debug/Lilu.kext .
-xcodebuild -configuration Debug
-cp -R build/Debug/VirtualSMC.kext ./../kexts/DEBUG/
+cp -R build/DEBUG/Lilu.kext ./../
+xcodebuild
+cp -R build/Release/Lilu.kext ./../kexts/
 
 # WhateverGreen
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
+cd ~/workspace/HACKINTOSH/Asus-Maximus-IX-CODE/build
 git clone https://github.com/acidanthera/WhateverGreen.git && cd WhateverGreen
-cp -R ../Lilu/build/Debug/Lilu.kext .
-xcodebuild -configuration Debug
-cp -R build/Debug/WhateverGreen.kext ./../kexts/DEBUG/
-
-# IntelMausiEthernet
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
-git clone https://github.com/Mieze/IntelMausiEthernet.git && cd IntelMausiEthernet
-xcodebuild -configuration Debug
-cp -R build/Debug/IntelMausiEthernet.kext ./../kexts/DEBUG/
-
-# IO80211Family and USBInjectAll
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
-cp -R ./../kexts/IO80211Family.kext kexts/DEBUG/
-cp -R ./../kexts/USBPorts.kext kexts/DEBUG/
-
-
-# Build RELEASE ========================================================
-# Lilu
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build/Lilu
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
-cp -R build/Release/Lilu.kext ./../kexts/RELEASE/
-
-# AppleALC
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build/AppleALC
-xcodebuild
-cp -R build/Release/AppleALC.kext ./../kexts/RELEASE/
+cp -R build/Release/WhateverGreen.kext ./../kexts/
 
 # VirtualSMC
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build/VirtualSMC
+cd ~/workspace/HACKINTOSH/Asus-Maximus-IX-CODE/build
+git clone https://github.com/acidanthera/VirtualSMC.git && cd VirtualSMC
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
-cp -R build/Release/VirtualSMC.kext ./../kexts/RELEASE/
+cp -R build/Release/VirtualSMC.kext build/Release/SMCProcessor.kext build/Release/SMCSuperIO.kext ./../kexts/
 
-# WhateverGreen
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build/WhateverGreen
+# AppleALC
+cd ~/workspace/HACKINTOSH/Asus-Maximus-IX-CODE/build
+git clone https://github.com/acidanthera/AppleALC.git && cd AppleALC
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
-cp -R build/Release/WhateverGreen.kext ./../kexts/RELEASE/
+cp -R build/Release/AppleALC.kext ./../kexts/
 
-# IntelMausiEthernet
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build/IntelMausiEthernet
+# BrcmPatchRAM3
+cd ~/workspace/HACKINTOSH/Asus-Maximus-IX-CODE/build
+git clone https://github.com/acidanthera/BrcmPatchRAM.git && cd BrcmPatchRAM
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
-cp -R build/Release/IntelMausiEthernet.kext ./../kexts/RELEASE/
+cp -R build/Products/Release/BrcmBluetoothInjector.kext build/Products/Release/BrcmFirmwareData.kext build/Products/Release/BrcmPatchRAM3.kext ./../kexts/
 
-# IO80211Family and USBInjectAll
-cd /Volumes/HACKINTOSH/workspace/Asus-Maximus-IX-CODE/build
-cp -R ./../kexts/IO80211Family.kext kexts/RELEASE/
-cp -R ./../kexts/USBPorts.kext kexts/RELEASE/
+# AirportBrcmFixup
+cd ~/workspace/HACKINTOSH/Asus-Maximus-IX-CODE/build
+git clone https://github.com/acidanthera/AirportBrcmFixup.git && cd AirportBrcmFixup
+cp -R ./../MacKernelSDK ./../Lilu.kext .
+xcodebuild
+cp -R build/Release/AirportBrcmFixup.kext ./../kexts/
+
+# IntelMausi
+cd ~/workspace/HACKINTOSH/Asus-Maximus-IX-CODE/build
+git clone https://github.com/acidanthera/IntelMausi.git && cd IntelMausi
+cp -R ./../MacKernelSDK .
+xcodebuild
+cp -R build/Release/IntelMausi.kext ./../kexts/
 ```
 
 #  Clover EFI bootloader
